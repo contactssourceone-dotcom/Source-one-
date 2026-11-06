@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Source One - Halal Business</title>
+<style>
+body{margin:0;font-family:sans-serif;background:#f1f5f9;text-align:center}
+header{background:#0f172a;color:white;padding:30px 20px}
+header h1{margin:0;font-size:35px}
+.badge{background:#16a34a;color:white;display:inline-block;padding:5px 15px;border-radius:20px;font-size:13px;margin-top:10px}
+.card{background:white;max-width:550px;margin:20px auto;padding:20px;border-radius:15px}
+.company{display:flex;gap:15px;align-items:center;text-align:left}
+.company img{width:65px;height:65px;border-radius:50%}
+.btn{background:#1a73e8;color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:bold}
+.grid{max-width:550px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 15px}
+.product{background:white;border-radius:15px;overflow:hidden;text-align:left}
+.product img{width:100%;height:130px;object-fit:cover}
+.product div{padding:12px}.price{color:#16a34a;font-weight:bold}
+</style>
+</head>
+<body>
+<header><h1>Source One</h1><p>সব কোম্পানির পণ্য, এক অ্যাপে</p><div class="badge">100% Halal Marketplace</div></header>
+<div class="card"><div class="company"><img src="https://via.placeholder.com/100"><div><h2 style="margin:0">রাজশাহী ফ্যাশন হাউস</h2><p>রাজশাহী • ভেরিফাইড কোম্পানি</p><button class="btn">ফলো করো</button></div></div></div>
+<div class="grid">
+<div class="product"><img src="https://via.placeholder.com/300x200"><div><b>প্রিমিয়াম পাঞ্জাবি</b><p class="price">৳ ১,২৫০</p><button class="btn" onclick="order('পাঞ্জাবি')">অর্ডার করো</button></div></div>
+<div class="product"><img src="https://via.placeholder.com/300x200"><div><b>সুতি শাড়ি</b><p class="price">৳ ২,৪৫০</p><button class="btn" onclick="order('শাড়ি')">অর্ডার করো</button></div></div>
+</div>
+<p id="msg" style="font-weight:bold;color:#1a73e8"></p>
+<script>function order(n){document.getElementById("msg").innerText = n+" অর্ডার হয়েছে!";}</script>
+</body>
+</html>
